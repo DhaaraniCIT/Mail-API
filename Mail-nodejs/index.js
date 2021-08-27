@@ -31,13 +31,13 @@ api.post('/email', (req , res) => {
        ciphers:'SSLv3'
     },
     auth: {
-        user: 'dhaarani1211@outlook.com',
-        pass: 'Deikv@123'
+        user: 'Your Email',
+        pass: 'Your Password'
     }
 });
     
     var mailOptions = {
-      from: 'dhaarani1211@outlook.com',
+      from: 'Your mail',
       to: str,
       subject: 'You have won Exciting gift 😍',
       html: '<h1>Congratulation You have won the gift Coupon💐</h1><p style="font-size:20px">By refering more people to <b>WAITLIST ME</b> you have won gift coupon</p><h2>&#127881; Keep Going &#127881;</h2><h3>Your coupon code:</h3><span style="font-size:30px;color:#b17cc6">'+coupon+'</span>'
@@ -77,7 +77,7 @@ api.post('/forget', (req , res) => {
   });
   
   var mailOptions = {
-    from: 'dhaaranieaswari@gmail.com',
+    from: 'your mail',
     to: str,
     subject: 'Change password Link',
     html: '<h5>To reset the password Use the following link</h5><a href="http://localhost:4200/resetPassword/'+OTP+'">http://localhost:4200/resetPassword/'+OTP+'</a>'
